@@ -18,6 +18,7 @@ activate (GtkApplication* app,
   label = gtk_label_new ("Jendela berlabel dan berframe.");
   gtk_container_add (GTK_CONTAINER (frame), label);
   gtk_box_pack_start (GTK_BOX (vbox), frame, FALSE, FALSE, 0);
+  gtk_container_set_border_width (GTK_CONTAINER (window), 5);
 
   gtk_container_add(GTK_CONTAINER(vbox), hbox);
   gtk_container_add(GTK_CONTAINER(window), vbox);
